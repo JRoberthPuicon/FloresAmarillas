@@ -21,17 +21,19 @@ body {
 }
 
 .text {
-  font-size: 4em;
+  font-size: 5vw;
+  text-align: center;
   color: #acd4e1; /* Puedes cambiar el color a tu gusto */
   position: absolute;
-  top: 20px;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000; /* Asegúrate de que el texto esté en un nivel superior */
+  z-index: 900; /* Asegúrate de que el texto esté en un nivel superior */
   font-weight: bold;
   background-color: transparent;
   opacity: 0; /* Comienza invisible */
   transition: opacity 2s ease-in-out; /* Transición de opacidad */
+  box-sizing: border-box;
 }
 
 .text.visible {
@@ -1366,3 +1368,9 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 11vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}
