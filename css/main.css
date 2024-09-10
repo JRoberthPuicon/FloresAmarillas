@@ -20,6 +20,24 @@ body {
   perspective: 1000px;
 }
 
+.text {
+  font-size: 4em;
+  color: #acd4e1; /* Puedes cambiar el color a tu gusto */
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Asegúrate de que el texto esté en un nivel superior */
+  font-weight: bold;
+  background-color: transparent;
+  opacity: 0; /* Comienza invisible */
+  transition: opacity 2s ease-in-out; /* Transición de opacidad */
+}
+
+.text.visible {
+  opacity: 1; /* Se vuelve visible */
+}
+
 .night {
   position: fixed;
   left: 50%;
